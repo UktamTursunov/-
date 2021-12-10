@@ -1,0 +1,194 @@
+.company{
+  padding: 40px ;
+  &__container{
+    max-width: 2000px;
+  }
+  &__content{
+    display: flex;
+  }
+  &__title{
+    @include fonts($roboto,normal,bold,80px,150%);
+    color: blue;
+    margin-bottom: 20px;
+  }
+  &__description{
+    @include fonts($roboto,normal,500,32px,150%);
+    color: black;
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    @include fonts($roboto,normal,bold,60px,150%);
+    color: blue;
+  }
+  &__img{
+    width: 50%;
+  }
+}
+@media (max-width: 1440px){
+.company{
+  &__container{
+    max-width: 1400px;
+  }
+  &__text{
+    margin-right: 20px;
+  }
+  &__title{
+    @include fonts($roboto,normal,bold,60px,150%);
+    color: blue;
+    margin-bottom: 20px;
+  }
+  &__description{
+    @include fonts($roboto,normal,500,23px,150%);
+    color: black;
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    @include fonts($roboto,normal,bold,50px,150%);
+    color: blue;
+  }
+  &__img{
+    width: 50%;
+  }
+}
+}
+@media (max-width: 1024px){
+  .company{
+    &__container{
+      max-width: 990px;
+    }
+    &__text{
+      margin-right: 15px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,40px,150%);
+      color: blue;
+      margin-bottom: 15px;
+    }
+    &__description{
+      @include fonts($roboto,normal,500,17px,150%);
+      color: black;
+      margin-bottom: 15px;
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,30px,150%);
+      color: blue;
+    }
+    &__img{
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 768px){
+  .company{
+    &__container{
+      max-width: 750px;
+    }
+    &__text{
+      margin-right: 12px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,25px,150%);
+      color: blue;
+      margin-bottom: 12px;
+    }
+    &__description{
+      @include fonts($roboto,normal,500,12px,150%);
+      color: black;
+      margin-bottom: 12px;
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,20px,150%);
+      color: blue;
+    }
+    &__img{
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 425px){
+  .company{
+    &__container{
+      max-width: 410px;
+    }
+    &__content{
+      display: block;
+    }
+    &__text{
+      margin-right: 12px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,28px,150%);
+      color: blue;
+      margin-bottom: 10px;
+    }
+    &__description{
+      @include fonts($roboto,normal,500,12px,150%);
+      color: black;
+      margin-bottom: 10px;
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,22px,150%);
+      color: blue;
+      margin-bottom: 10px;
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 375px){
+  .company{
+    &__container{
+      max-width: 360px;
+    }
+    &__content{
+      display: block;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,25px,150%);
+      color: blue;
+      margin-bottom: 7px;
+    }
+    &__description{
+      @include fonts($roboto,normal,500,10px,150%);
+      color: black;
+      margin-bottom: 7px;
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,20px,150%);
+      color: blue;
+      margin-bottom: 7px;
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 320px){
+  .company{
+    &__container{
+      max-width: 310px;
+    }
+    &__content{
+      display: block;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,22px,150%);
+      color: blue;
+      margin-bottom: 5px;
+    }
+    &__description{
+      @include fonts($roboto,normal,500,8px,150%);
+      color: black;
+      margin-bottom: 5px;
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,15px,150%);
+      color: blue;
+      margin-bottom: 5px;
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+}

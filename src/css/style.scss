@@ -1,0 +1,151 @@
+@import "../fonts/stylesheet.css";
+@import "../fontello/css/fontello.css";
+@import "mixin";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: start;
+  position: relative;
+}
+
+a{
+  cursor: pointer;
+  &:hover{
+  color: #FFFFFF;
+    border-bottom: 2px solid white;
+    transition: .2s ease;
+  }
+}
+.title{
+  @include fonts($roboto,normal,bold,60px,150%);
+  color: blue;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.description{
+  @include fonts($roboto,normal,500,30px,150%);
+  text-align: start;
+  margin-bottom: 20px;
+}
+.button{
+  padding: 20px 30px;
+  @include fonts($roboto,normal,500,25px,150%);
+  color: #FFFFFF;
+  border: none;
+  background-color: #0B446B;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.big{
+    @include fonts($roboto,normal,bold,35px,150%);
+  color: black;
+}
+
+
+@media (max-width: 1024px) {
+  .title{
+    @include fonts($roboto,normal,bold,40px,150%);
+    margin-bottom: 20px;
+  }
+  .description{
+    @include fonts($roboto,normal,500,25px,150%);
+    margin-bottom: 20px;
+  }
+  .button{
+    padding: 20px 30px;
+    @include fonts($roboto,normal,500,25px,150%);
+  }
+}
+@media (max-width: 768px) {
+  .big{
+    @include fonts($roboto,normal,bold,25px,150%);
+  }
+  .title{
+    @include fonts($roboto,normal,bold,30px,150%);
+    margin-bottom: 15px;
+  }
+  .description{
+    @include fonts($roboto,normal,500,20px,150%);
+    margin-bottom: 15px;
+  }
+  .button{
+    padding: 20px 20px;
+    @include fonts($roboto,normal,500,20px,150%);
+  }
+}
+@media (max-width: 425px) {
+  .big{
+    @include fonts($roboto,normal,bold,20px,150%);
+  }
+  .title{
+    @include fonts($roboto,normal,bold,20px,150%);
+    margin-bottom: 15px;
+  }
+  .description{
+    @include fonts($roboto,normal,500,16px,150%);
+    margin-bottom: 15px;
+  }
+  .button{
+    padding: 15px 15px;
+    @include fonts($roboto,normal,500,16px,150%);
+  }
+}
+@media (max-width: 375px) {
+  .big{
+    @include fonts($roboto,normal,bold,18px,150%);
+  }
+  .title{
+    @include fonts($roboto,normal,bold,18px,150%);
+    margin-bottom: 10px;
+  }
+  .description{
+    @include fonts($roboto,normal,500,14px,150%);
+    margin-bottom: 10px;
+  }
+  .button{
+    padding: 15px 15px;
+    @include fonts($roboto,normal,500,14px,150%);
+  }
+}
+@media (max-width: 320px) {
+  .big{
+    @include fonts($roboto,normal,bold,13px,150%);
+  }
+  .title{
+    @include fonts($roboto,normal,bold,16px,150%);
+    margin-bottom: 10px;
+  }
+  .description{
+    @include fonts($roboto,normal,500,12px,150%);
+    margin-bottom: 10px;
+  }
+  .button{
+    padding: 10px 10px;
+    @include fonts($roboto,normal,500,14px,150%);
+  }
+}
+
+
+
+
+@import "header";
+@import "specialization";
+@import "company";
+@import "control";
+@import "product";
+@import "metal";
+@import "about";
+@import "fittings";
+@import "tubes";
+@import "lists";
+
+
+
+

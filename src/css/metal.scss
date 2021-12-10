@@ -1,0 +1,309 @@
+.metal{
+  padding-top: 50px;
+  &__box{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #18346B;
+    padding: 30px 0 ;
+  }
+  &__title{
+    @include fonts($roboto,normal,bold,50px,150%);
+    color: #FFFFFF;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-around;
+    &-li{
+      position: relative;
+     &_first{
+       &::before{
+         content: 'Арматура ';
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%,-50%);
+         @include fonts($roboto,normal,500,30px,150%);
+         color: #FFFFFF;
+       }
+     }
+      &_second{
+        &::before{
+          content: 'Кательные трубы ';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          @include fonts($roboto,normal,500,30px,150%);
+          color: #FFFFFF;
+        }
+      }
+      &_third{
+        &::before{
+          content: 'Отводы стальные';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          @include fonts($roboto,normal,500,30px,150%);
+          color: #FFFFFF;
+        }
+      }
+      &_fourth{
+        &::before{
+          content: 'Жаростойкие листы';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          @include fonts($roboto,normal,500,30px,150%);
+          color: #FFFFFF;
+        }
+      }
+    }
+    &-img{
+      width: 290px;
+      height: 290px;
+      border-radius: 10%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .metal{
+    padding-top: 50px;
+    .container{
+      max-width: 990px;
+    }
+    &__box{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding: 30px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,50px,150%);
+    }
+    &__row{
+      display: flex;
+      justify-content: space-around;
+      &-li{
+        position: relative;
+        &_first{
+          &::before{
+            @include fonts($roboto,normal,500,25px,150%);
+          }
+        }
+        &_second{
+          &::before{
+            @include fonts($roboto,normal,500,25px,150%);
+          }
+        }
+        &_third{
+          &::before{
+            @include fonts($roboto,normal,500,25px,150%);
+          }
+        }
+        &_fourth{
+          &::before{
+            @include fonts($roboto,normal,500,25px,150%);
+          }
+        }
+      }
+      &-img{
+        width: 225px;
+        height: 225px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .metal{
+    padding-top: 40px;
+    .container{
+      max-width: 750px;
+    }
+    &__box{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding: 20px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,40px,150%);
+    }
+    &__row{
+      display: flex;
+      justify-content: space-around;
+      &-li{
+        position: relative;
+        &_first{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_second{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_third{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_fourth{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+      }
+      &-img{
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .metal{
+    padding-top: 30px;
+    .container{
+      max-width: 410px;
+    }
+    &__box{
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding: 20px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,20px,150%);
+    }
+    &__row{
+      display: block;
+      &-li{
+        position: relative;
+        margin-bottom: 15px;
+        text-align: center;
+        &_first{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_second{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_third{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_fourth{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+      }
+      &-img{
+        width: 360px;
+        height: 360px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .metal{
+    padding-top: 20px;
+    .container{
+      max-width: 360px;
+    }
+    &__box{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 15px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,16px,150%);
+    }
+    &__row{
+      display: block;
+      &-li{
+        position: relative;
+        margin-bottom: 15px;
+        text-align: center;
+        &_first{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_second{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_third{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+        &_fourth{
+          &::before{
+            @include fonts($roboto,normal,500,20px,150%);
+          }
+        }
+      }
+      &-img{
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .metal{
+    padding-top: 15px;
+    .container{
+      max-width: 310px;
+    }
+    &__box{
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding: 10px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,14px,150%);
+    }
+    &__row{
+      display: block;
+      &-li{
+        position: relative;
+        margin-bottom: 15px;
+        text-align: center;
+        &_first{
+          &::before{
+            @include fonts($roboto,normal,500,18px,150%);
+          }
+        }
+        &_second{
+          &::before{
+            @include fonts($roboto,normal,500,18px,150%);
+          }
+        }
+        &_third{
+          &::before{
+            @include fonts($roboto,normal,500,18px,150%);
+          }
+        }
+        &_fourth{
+          &::before{
+            @include fonts($roboto,normal,500,18px,150%);
+          }
+        }
+      }
+      &-img{
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}

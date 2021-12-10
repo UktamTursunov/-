@@ -1,0 +1,685 @@
+.product{
+  margin-top: 60px;
+  &__box{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #18346B;
+    padding: 30px 0 ;
+  }
+  &__title{
+    @include fonts($roboto,normal,bold,50px,150%);
+    color: #FFFFFF;
+  }
+  &__subtitle{
+    @include fonts($roboto,normal,bold,50px,150%);
+    color: blue;
+    margin-bottom: 30px;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__li{
+    &-img{
+      width: 230px;
+      height: 230px;
+      border-radius: 10%;
+      margin-bottom: 20px;
+    }
+    &-description{
+      @include fonts($roboto,normal,500,30px,150%);
+      margin-bottom: 15px;
+    }
+    &-price{
+      @include fonts($roboto,normal,bold,45px,150%);
+    }
+  }
+   &__contacts{
+     display: flex;
+     margin-top: 50px;
+     margin-bottom: 20px;
+     &-left{
+       width: 50%;
+       text-align: start;
+       border-right: 10px solid blue;
+
+     }
+     &-right{
+       width: 50%;
+       text-align: end;
+     }
+     &-icon{
+       font-size: 200px;
+       color: blue;
+       margin-bottom: 30px;
+       &_left{
+         margin-left: 30px;
+       }
+       &_right{
+         margin-right: 80px;
+       }
+     }
+     &-tel{
+       @include fonts($roboto,normal,bold,45px,150%);
+       color: black;
+     }
+   }
+  &__link{
+    color: #FFFFFF;
+  }
+  &__contact{
+    text-align: start;
+    margin: 30px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__adress{
+   &-title{
+     @include fonts($roboto,normal,bold,45px,150%);
+     margin-bottom: 20px;
+   }
+   &-line{
+     display: flex;
+     column-gap: 15px;
+     align-items: center;
+     margin-bottom: 15px;
+   }
+    &-icon{
+      font-size: 40px;
+    }
+    &-text{
+      color: black;
+      @include fonts($roboto,normal,500,30px,150%);
+    }
+  }
+  &__categories{
+    &-title{
+      @include fonts($roboto,normal,bold,45px,150%);
+      margin-bottom: 20px;
+    }
+    &-link{
+      color: black;
+      @include fonts($roboto,normal,500,30px,150%);
+    }
+  }
+  &__socials{
+   &-title{
+     @include fonts($roboto,normal,bold,45px,150%);
+     margin-bottom: 20px;
+   }
+    &-img{
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .product{
+    .container{
+      max-width: 990px;
+    }
+    margin-top: 50px;
+    &__box{
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: #18346B;
+      padding: 25px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,40px,150%);
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,40px,150%);
+      margin-bottom: 20px;
+    }
+    &__row{
+      display: flex;
+      column-gap: 15px;
+    }
+    &__li{
+      &-img{
+        width: 232px;
+        height: 230px;
+        margin-bottom: 20px;
+      }
+      &-description{
+        @include fonts($roboto,normal,500,30px,150%);
+        margin-bottom: 15px;
+      }
+      &-price{
+        @include fonts($roboto,normal,bold,45px,150%);
+      }
+    }
+    &__contacts{
+      display: flex;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      &-left{
+        width: 50%;
+        text-align: start;
+        border-right: 9px solid blue;
+
+      }
+      &-right{
+        width: 50%;
+        text-align: end;
+      }
+      &-icon{
+        font-size: 180px;
+        margin-bottom: 30px;
+        &_left{
+          margin-left: 30px;
+        }
+        &_right{
+          margin-right: 70px;
+        }
+      }
+      &-tel{
+        @include fonts($roboto,normal,bold,40px,150%);
+        color: black;
+      }
+    }
+    &__link{
+      color: #FFFFFF;
+    }
+    &__contact{
+      text-align: start;
+      margin: 30px 0 20px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__adress{
+      &-title{
+        @include fonts($roboto,normal,bold,40px,150%);
+        margin-bottom: 20px;
+      }
+      &-line{
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-icon{
+        font-size: 35px;
+      }
+      &-text{
+        color: black;
+        @include fonts($roboto,normal,500,23px,150%);
+      }
+    }
+    &__categories{
+      &-title{
+        @include fonts($roboto,normal,bold,40px,150%);
+        margin-bottom: 20px;
+      }
+      &-link{
+        color: black;
+        @include fonts($roboto,normal,500,23px,150%);
+      }
+    }
+    &__socials{
+      &-title{
+        @include fonts($roboto,normal,bold,40px,150%);
+        margin-bottom: 20px;
+      }
+      &-img{
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .product{
+    .container{
+      max-width: 750px;
+    }
+    margin-top: 40px;
+    &__box{
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 25px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,32px,150%);
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,32px,150%);
+      margin-bottom: 20px;
+    }
+    &__row{
+      display: flex;
+      column-gap: 10px;
+    }
+    &__li{
+      &-img{
+        width: 177px;
+        height: 177px;
+        margin-bottom: 15px;
+      }
+      &-description{
+        @include fonts($roboto,normal,500,23px,150%);
+        margin-bottom: 10px;
+      }
+      &-price{
+        @include fonts($roboto,normal,bold,38px,150%);
+      }
+    }
+    &__contacts{
+      display: flex;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      &-left{
+        width: 50%;
+        text-align: start;
+        border-right: 7px solid blue;
+
+      }
+      &-right{
+        width: 50%;
+        text-align: end;
+      }
+      &-icon{
+        font-size: 140px;
+        margin-bottom: 20px;
+        &_left{
+          margin-left: 25px;
+        }
+        &_right{
+          margin-right: 60px;
+        }
+      }
+      &-tel{
+        @include fonts($roboto,normal,bold,30px,150%);
+      }
+    }
+    &__contact{
+      text-align: start;
+      margin: 25px 0 15px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__adress{
+      &-title{
+        @include fonts($roboto,normal,bold,30px,150%);
+        margin-bottom: 20px;
+      }
+      &-line{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-icon{
+        font-size: 30px;
+      }
+      &-text{
+        color: black;
+        @include fonts($roboto,normal,500,17px,150%);
+      }
+    }
+    &__categories{
+      &-title{
+        @include fonts($roboto,normal,bold,30px,150%);
+        margin-bottom: 20px;
+      }
+      &-link{
+        color: black;
+        @include fonts($roboto,normal,500,17px,150%);
+      }
+    }
+    &__socials{
+      &-title{
+        @include fonts($roboto,normal,bold,30px,150%);
+        margin-bottom: 20px;
+      }
+      &-img{
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .product{
+    .container{
+      max-width: 410px;
+    }
+    margin-top: 30px;
+    &__box{
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 25px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,18px,150%);
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,25px,150%);
+      margin-bottom: 20px;
+    }
+    &__row{
+      display: block;
+    }
+    &__li{
+      text-align: center;
+      &-img{
+        width: 360px;
+        height: 360px;
+        margin-bottom: 10px;
+      }
+      &-description{
+        @include fonts($roboto,normal,500,23px,150%);
+        margin-bottom: 10px;
+      }
+      &-price{
+        @include fonts($roboto,normal,bold,38px,150%);
+      }
+    }
+    &__contacts{
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      &-left{
+        width: 50%;
+        text-align: start;
+        border-right: 5px solid blue;
+
+      }
+      &-right{
+        width: 50%;
+        text-align: end;
+      }
+      &-icon{
+        font-size: 60px;
+        margin-bottom: 15px;
+        &_left{
+          margin-left: 20px;
+        }
+        &_right{
+          margin-right: 40px;
+        }
+      }
+      &-tel{
+        @include fonts($roboto,normal,bold,16px,150%);
+      }
+    }
+    &__contact{
+      text-align: start;
+      margin: 15px 0 10px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__adress{
+      &-title{
+        @include fonts($roboto,normal,bold,16px,150%);
+        margin-bottom: 20px;
+      }
+      &-line{
+        display: flex;
+        column-gap: 0;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-icon{
+        font-size: 15px;
+      }
+      &-text{
+        color: black;
+        @include fonts($roboto,normal,500,12px,150%);
+      }
+    }
+    &__categories{
+      &-title{
+        @include fonts($roboto,normal,bold,16px,150%);
+        margin-bottom: 20px;
+      }
+      &-link{
+        color: black;
+        @include fonts($roboto,normal,500,12px,150%);
+      }
+    }
+    &__socials{
+      &-title{
+        @include fonts($roboto,normal,bold,16px,150%);
+        margin-bottom: 20px;
+      }
+      &-img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .product{
+    .container{
+      max-width: 360px;
+    }
+    margin-top: 20px;
+    &__box{
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 20px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,15px,150%);
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,20px,150%);
+      margin-bottom: 20px;
+    }
+    &__row{
+      display: block;
+    }
+    &__li{
+      text-align: center;
+      &-img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+      }
+      &-description{
+        @include fonts($roboto,normal,500,20px,150%);
+        margin-bottom: 10px;
+      }
+      &-price{
+        @include fonts($roboto,normal,bold,30px,150%);
+      }
+    }
+    &__contacts{
+      display: flex;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      &-left{
+        width: 50%;
+        text-align: start;
+        border-right: 3px solid blue;
+
+      }
+      &-right{
+        width: 50%;
+        text-align: end;
+      }
+      &-icon{
+        font-size: 50px;
+        margin-bottom: 15px;
+        &_left{
+          margin-left: 15px;
+        }
+        &_right{
+          margin-right: 30px;
+        }
+      }
+      &-tel{
+        @include fonts($roboto,normal,bold,14px,150%);
+      }
+    }
+    &__contact{
+      text-align: start;
+      margin: 10px 0 10px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__adress{
+      &-title{
+        @include fonts($roboto,normal,bold,14px,150%);
+        margin-bottom: 20px;
+      }
+      &-line{
+        display: flex;
+        column-gap: 0;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-icon{
+        font-size: 15px;
+      }
+      &-text{
+        color: black;
+        @include fonts($roboto,normal,500,10px,150%);
+      }
+    }
+    &__categories{
+      &-title{
+        @include fonts($roboto,normal,bold,14px,150%);
+        margin-bottom: 20px;
+      }
+      &-link{
+        color: black;
+        @include fonts($roboto,normal,500,10px,150%);
+      }
+    }
+    &__socials{
+      &-title{
+        @include fonts($roboto,normal,bold,14px,150%);
+        margin-bottom: 20px;
+      }
+      &-img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .product{
+    .container{
+      max-width: 310px;
+    }
+    margin-top: 15px;
+    &__box{
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 20px 0 ;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,13px,150%);
+    }
+    &__subtitle{
+      @include fonts($roboto,normal,bold,17px,150%);
+      margin-bottom: 20px;
+    }
+    &__row{
+      display: block;
+    }
+    &__li{
+      text-align: center;
+      &-img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+      }
+      &-description{
+        @include fonts($roboto,normal,500,18px,150%);
+        margin-bottom: 10px;
+      }
+      &-price{
+        @include fonts($roboto,normal,bold,26px,150%);
+      }
+    }
+    &__contacts{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      &-left{
+        width: 50%;
+        text-align: start;
+        border-right: 2px solid blue;
+
+      }
+      &-right{
+        width: 50%;
+        text-align: end;
+      }
+      &-icon{
+        font-size: 40px;
+        margin-bottom: 10px;
+        &_left{
+          margin-left: 20px;
+        }
+        &_right{
+          margin-right: 40px;
+        }
+      }
+      &-tel{
+        @include fonts($roboto,normal,bold,12px,150%);
+      }
+    }
+    &__contact{
+      text-align: start;
+      margin: 10px 0 10px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__adress{
+      &-title{
+        @include fonts($roboto,normal,bold,12px,150%);
+        margin-bottom: 20px;
+      }
+      &-line{
+        display: flex;
+        column-gap: 0;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-icon{
+        font-size: 15px;
+      }
+      &-text{
+        color: black;
+        @include fonts($roboto,normal,500,8px,150%);
+      }
+    }
+    &__categories{
+      &-title{
+        @include fonts($roboto,normal,bold,12px,150%);
+        margin-bottom: 20px;
+      }
+      &-link{
+        color: black;
+        @include fonts($roboto,normal,500,8px,150%);
+      }
+    }
+    &__socials{
+      &-title{
+        @include fonts($roboto,normal,bold,12px,150%);
+        margin-bottom: 20px;
+      }
+      &-img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

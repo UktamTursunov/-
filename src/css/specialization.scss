@@ -1,0 +1,203 @@
+.specialisation{
+  padding: 150px 60px 80px;
+  background: url("../images/specialization/bg.png") center/cover no-repeat;
+   &__container{
+     max-width: 1600px;
+   }
+   &__title{
+     @include fonts($roboto,normal,bold,100px,150%);
+     color: #FFFFFF;
+   }
+  &__content{
+    &-top{
+      display: flex;
+      column-gap: 100px;
+      margin-bottom: 30px;
+    }
+    &-bottom{
+      display: flex;
+      column-gap: 30px;
+    }
+    &-text{
+      display: flex;
+      column-gap: 40px;
+    }
+    &-icon{
+      font-size: 100px;
+      color: #FFFFFF;
+    }
+    &-description{
+      @include fonts($roboto,normal,500,40px,150%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media (max-width: 1440px){
+.specialisation{
+  &__container{
+    max-width: 1400px;
+  }
+  &__title{
+    @include fonts($roboto,normal,bold,90px,150%);
+  }
+  &__content{
+    &-top{
+      column-gap: 30px;
+    }
+    &-description{
+      @include fonts($roboto,normal,500,35px,150%);
+    }
+  }
+}
+}
+@media (max-width: 1024px) {
+  .specialisation{
+    .container{
+      max-width: 1000px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,60px,150%);
+    }
+    &__content{
+      &-top{
+        column-gap: 20px;
+        margin-bottom: 20px;
+      }
+      &-bottom{
+        column-gap: 20px;
+      }
+      &-icon{
+        font-size: 70px;
+      }
+      &-description{
+        @include fonts($roboto,normal,bold,26px,150%);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .specialisation{
+    .container{
+      max-width: 750px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,40px,150%);
+    }
+    &__content{
+      &-icon{
+        font-size: 50px;
+      }
+      &-text{
+        column-gap: 20px;
+      }
+      &-top{
+        column-gap: 15px;
+        margin-bottom: 20px;
+      }
+      &-bottom{
+        column-gap: 15px;
+      }
+      &-description{
+        @include fonts($roboto,normal,bold,20px,150%);
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .specialisation{
+    .container{
+      max-width: 410px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,25px,150%);
+      margin-bottom: 20px;
+    }
+    &__content{
+      &-icon{
+        font-size: 35px;
+      }
+      &-text{
+        column-gap: 15px;
+      }
+      &-top{
+        column-gap: 15px;
+        margin-bottom: 15px;
+        display: block;
+
+      }
+      &-bottom{
+        column-gap: 15px;
+        display: block;
+      }
+      &-description{
+        @include fonts($roboto,normal,bold,17px,150%);
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .specialisation{
+    .container{
+      max-width: 370px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,22px,150%);
+      margin-bottom: 17px;
+    }
+    &__content{
+      &-icon{
+        font-size: 30px;
+      }
+      &-text{
+        column-gap: 10px;
+      }
+      &-top{
+        column-gap: 10px;
+        margin-bottom: 10px;
+        display: block;
+
+      }
+      &-bottom{
+        column-gap: 10px;
+        display: block;
+      }
+      &-description{
+        @include fonts($roboto,normal,bold,15px,150%);
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .specialisation{
+    .container{
+      max-width: 310px;
+    }
+    &__title{
+      @include fonts($roboto,normal,bold,18px,150%);
+      margin-bottom: 15px;
+    }
+    &__content{
+      &-icon{
+        font-size: 25px;
+      }
+      &-text{
+        column-gap: 6px;
+      }
+      &-top{
+        margin-bottom: 10px;
+        display: block;
+
+      }
+      &-bottom{
+        display: block;
+      }
+      &-description{
+        @include fonts($roboto,normal,bold,12px,150%);
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
