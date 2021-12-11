@@ -1,9 +1,10 @@
 .control{
-  padding-top: 20px;
+  padding-top: 25px;
   &__row{
     display: flex;
     column-gap: 30px;
   }
+
   &__li{
     &-img{
       width: 380px;
