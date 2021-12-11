@@ -23,6 +23,9 @@ a{
     transition: .2s ease;
   }
 }
+.white{
+  color: #FFFFFF;
+}
 .title{
   @include fonts($roboto,normal,bold,60px,150%);
   color: blue;
