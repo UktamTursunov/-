@@ -2,7 +2,7 @@
   padding-top: 20px;
   &__row{
     display: flex;
-    justify-content: space-around;
+    column-gap: 30px;
   }
   &__li{
     &-img{

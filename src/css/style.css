@@ -19,7 +19,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: #FFFFFF;
+  color: blue;
   border-bottom: 2px solid white;
   transition: 0.2s ease;
 }
@@ -870,7 +870,7 @@ a:hover {
 }
 .control__row {
   display: flex;
-  justify-content: space-around;
+  column-gap: 30px;
 }
 .control__li-img {
   width: 380px;
